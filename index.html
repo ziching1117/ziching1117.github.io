@@ -38,6 +38,43 @@
       text-decoration: none;
       font-weight: bold;
     }
+
+    /* 活動照片區樣式 */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 14px;
+    }
+    @media (min-width: 800px) {
+      .grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+    .card {
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid #eee;
+      background: #fff;
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      display: block;
+    }
+    .caption {
+      padding: 12px 12px 14px;
+    }
+    .caption .title {
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .caption .meta {
+      color: #666;
+      font-size: 14px;
+      line-height: 1.5;
+    }
   </style>
 </head>
 
@@ -81,12 +118,49 @@
 </section>
 
 <section>
+  <h2>活動照片區</h2>
+  <p>將每一次活動的精彩瞬間彙整呈現，讓成果一眼就能看見。</p>
+
+  <div class="grid">
+    <div class="card">
+      <img src="images/welcome0910.jpg" alt="迎新活動">
+      <div class="caption">
+        <div class="title">迎新活動｜動物 Fun「傳」市</div>
+        <div class="meta">2025/09/10</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/bbq0919.jpg" alt="系烤活動">
+      <div class="caption">
+        <div class="title">系烤活動｜水深火熱 on air</div>
+        <div class="meta">2025/09/19</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/lecture1014.jpg" alt="講座活動">
+      <div class="caption">
+        <div class="title">講座｜公關思維 × 職場先機</div>
+        <div class="meta">2025/10/14</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/camp1129.jpg" alt="宿營活動">
+      <div class="caption">
+        <div class="title">宿營｜角頭崛起：蘭陽爭霸戰</div>
+        <div class="meta">2025/11/29–11/30</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
   <h2>聯絡我們</h2>
   <p>
     Instagram：
-    <a href="https://www.instagram.com/tku_mc" target="_blank">
-      @tku_mc
-    </a>
+    <a href="https://www.instagram.com/tku_mc" target="_blank">@tku_mc</a>
   </p>
 </section>
 
