@@ -1,236 +1,52 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>淡江大學大眾傳播學系第42屆系學會</title>
-  <style>
-    body {
-      font-family: "Noto Sans TC", Arial, sans-serif;
-      margin: 0;
-      background-color: #f7f7f7;
-      color: #333;
-      line-height: 1.8;
-    }
-    header {
-      background-color: #111;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    section {
-      max-width: 900px;
-      margin: 40px auto;
-      background: white;
-      padding: 30px;
-      border-radius: 10px;
-    }
-    h2 {
-      border-left: 6px solid #111;
-      padding-left: 10px;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: #777;
-    }
-    a {
-      color: #111;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    /* 活動照片區樣式 */
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 14px;
-      margin-top: 14px;
-    }
-    @media (min-width: 800px) {
-      .grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-      }
-    }
-    .card {
-      border-radius: 12px;
-      overflow: hidden;
-      border: 1px solid #eee;
-      background: #fff;
-    }
-    .card img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-      display: block;
-    }
-    .caption {
-      padding: 12px 12px 14px;
-    }
-    .caption .title {
-      font-weight: 700;
-      margin-bottom: 4px;
-    }
-    .caption .meta {
-      color: #666;
-      font-size: 14px;
-      line-height: 1.5;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="brand">淡江大學大眾傳播學系<br>第42屆系學會</div>
+      <div class="subbrand">網站導覽（側欄式）</div>
 
-<header>
-  <h1>淡江大學大眾傳播學系第42屆系學會</h1>
-  <p>連結同學、老師與校方，打造最有溫度的學習共同體</p>
-</header>
+      <nav class="nav">
+        <a class="active" href="index.html">首頁</a>
+        <a href="about.html">關於我們</a>
+        <a href="team.html">幹部團隊</a>
+        <a href="organization.html">組織運作區</a>
+        <a href="finance.html">財務管理區</a>
+        <a href="performance.html">活動績效區</a>
+        <a href="minutes.html">會議紀錄區</a>
+        <a href="photos.html">年度活動照片區</a>
+        <a href="contact.html">聯絡我們</a>
+      </nav>
+    </aside>
 
-<section>
-  <h2>關於我們</h2>
-  <p>
-    本系學會以凝聚系上向心力為核心，致力於成為學生、教師與校方之間
-    穩定且有效的溝通橋樑，同時積極建立良好的對外交流與合作關係，
-    讓大眾傳播系的學習與活動能夠向內深化、向外擴展。
-  </p>
-</section>
+    <main class="main">
+      <div class="container">
+        <div class="card">
+          <h1 class="page-title">歡迎來到第42屆系學會網站</h1>
+          <p class="page-desc">
+            這裡彙整系學會的組織運作、財務管理、活動績效、會議紀錄與成果照片，
+            方便成員、師長與評鑑查閱。
+          </p>
+        </div>
 
-<section>
-  <h2>幹部團隊</h2>
-  <ul>
-    <li><strong>會長／公關組</strong>：鄭慈穎</li>
-    <li><strong>副會長／行政組</strong>：莊子靚</li>
-    <li><strong>活動組</strong>：吳左安、劉彥妤</li>
-    <li><strong>財務組</strong>：陳沛伶</li>
-    <li><strong>美宣組</strong>：林心宜</li>
-    <li><strong>機動組</strong>：周妙縈、陳昱臻</li>    
-    <li><strong>影音組</strong>：伍紘震、黃崇衡、李致丞、江宜恩</li>
-  </ul>
-</section>
-
-<section>
-  <h2>年度活動</h2>
-  <ul>
-    <li>2025/09/10｜動物 Fun「傳」市</li>
-    <li>2025/09/19｜水深火熱 on air：只想烤慮你</li>
-    <li>2025/10/14｜公關思維 × 職場先機：踏入職場的超前部署</li>
-    <li>2025/11/29–11/30｜角頭崛起：蘭陽爭霸戰</li>
-    <li>2026/01/08｜114學年度第一學期：期末系大會</li>
-  </ul>
-</section>
-
-<section>
-  <h2>活動照片區</h2>
-  <p>將每一次活動的精彩瞬間彙整呈現，讓成果一眼就能看見。</p>
-
-  <div class="grid">
-    <div class="card">
-      <img src="images/welcome0910.jpg" alt="迎新">
-      <div class="caption">
-        <div class="title">迎新活動｜動物 Fun「傳」市</div>
-        <div class="meta">2025/09/10</div>
+        <div class="card">
+          <h2>快速入口</h2>
+          <ul>
+            <li><a href="organization.html">組織運作區</a>（章程／行事曆／架構圖）</li>
+            <li><a href="finance.html">財務管理區</a>（器材清單／收支綜整／系費名單）</li>
+            <li><a href="minutes.html">會議紀錄區</a>（PDF 清單）</li>
+            <li><a href="photos.html">年度活動照片區</a>（成果照片牆）</li>
+          </ul>
+          <div class="footer">© 淡江大學大眾傳播學系第42屆系學會</div>
+        </div>
       </div>
-    </div>
-
-    <div class="card">
-      <img src="images/bbq0919.JPG" alt="系烤">
-      <div class="caption">
-        <div class="title">系烤活動｜水深火熱 on air</div>
-        <div class="meta">2025/09/19</div>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="images/lecture1014.jpg" alt="講座">
-      <div class="caption">
-        <div class="title">講座活動｜公關思維 × 職場先機</div>
-        <div class="meta">2025/10/14</div>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="images/campe1129.png" alt="宿營">
-      <div class="caption">
-        <div class="title">宿營活動｜角頭崛起：蘭陽爭霸戰</div>
-        <div class="meta">2025/11/29–11/30</div>
-      </div>
-    </div>
+    </main>
   </div>
-</section>
-
-<section>
-  <h2>會議紀錄區</h2>
-  <p>
-    本區彙整系學會歷次會議紀錄，供成員與師長查閱，
-    以提升行政透明度與組織運作效率。
-  </p>
-
-  <ul>
-    <!-- 例行會議 -->
-    <li>
-      2025/06/02｜第1次例行會議紀錄
-      <a href="pdf/minutes_20250602_regular_01.pdf.pdf" target="_blank">
-        （查看 PDF）
-      </a>
-    </li>
-
-    <li>
-      2025/06/11｜第2次例行會議紀錄
-      <a href="pdf/minutes_20250611_regular_02.pdf.pdf" target="_blank">
-        （查看 PDF）
-      </a>
-    </li>
-
-    <li>
-      2025/07/12｜第3次例行會議紀錄
-      <a href="pdf/minutes_20250712_regular_03.pdf.pdf" target="_blank">
-        （查看 PDF）
-      </a>
-    </li>
-
-<li>
-      2025/07/12｜第4次例行會議紀錄
-      <a href="pdf/minutes_20250719_regular_04.pdf.pdf" target="_blank">
-        （查看 PDF）
-      </a>
-    </li>
-
-<li>
-      2025/07/12｜第5次例行會議紀錄
-      <a href="pdf/minutes_20250726_regular_05.pdf.pdf" target="_blank">
-        （查看 PDF）
-      </a>
-    </li>
-  
-  </ul>
-</section>
-  
-<section>
-  <h2>聯絡我們</h2>
-
-  <p>
-    透過官方 Instagram 帳號作為即時訊息發布與互動平台，
-    並搭配專屬電子郵件信箱作為正式公文、合作洽談與活動聯繫之主要管道，
-    使對外溝通流程更為明確、系統化。
-  </p>
-
-  <p>
-    Instagram：
-    <a href="https://www.instagram.com/tku_mc?igsh=MWZyNTc4bnRoaWo5dw==" target="_blank">
-      @tku_mc
-    </a>
-  </p>
-
-  <p>
-    Gmail：
-    <a href="mailto:9010@tkueca.org">
-      9010@tkueca.org
-    </a>
-  </p>
-</section>
-  
-<footer>
-  © 淡江大學大眾傳播學系第42屆系學會
-</footer>
-
 </body>
 </html>
