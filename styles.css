@@ -122,3 +122,29 @@ a:hover{ text-decoration:underline; }
   background:rgba(0,0,0,0.65);
   text-decoration:none;
 }
+
+/* ===== 橫向活動照片列 ===== */
+.photo-row{
+  display:flex;
+  gap:14px;
+  overflow-x:auto;
+  padding-bottom:6px;
+  scroll-snap-type:x mandatory;
+}
+
+.photo-row a{
+  flex:0 0 auto;
+  width:260px;
+  scroll-snap-align:start;
+  border-radius:12px;
+  overflow:hidden;
+  border:1px solid #eee;
+  background:#fff;
+}
+
+.photo-row img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+  display:block;
+}
