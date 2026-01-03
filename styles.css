@@ -313,3 +313,50 @@ li{ margin:6px 0; }
     grid-template-columns: 1fr;
   }
 }
+
+/* =========================
+   Sidebar 收合功能
+   ========================= */
+
+/* 收合按鈕 */
+.sidebar-toggle{
+  background:rgba(255,255,255,0.15);
+  border:none;
+  color:#fff;
+  font-size:20px;
+  padding:8px 12px;
+  border-radius:10px;
+  cursor:pointer;
+  margin-bottom:14px;
+}
+
+.sidebar-toggle:hover{
+  background:rgba(255,255,255,0.25);
+}
+
+/* 預設 sidebar 寬度 */
+.sidebar{
+  transition: width 0.25s ease;
+}
+
+/* 收合狀態 */
+body.sidebar-collapsed .sidebar{
+  width:72px;
+  padding-left:10px;
+  padding-right:10px;
+}
+
+/* 收合時隱藏文字，只留 icon / 空間 */
+body.sidebar-collapsed .sidebar .brand,
+body.sidebar-collapsed .sidebar .subbrand,
+body.sidebar-collapsed .sidebar .nav a{
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  font-size:0;
+}
+
+/* 主內容補位 */
+body.sidebar-collapsed .main{
+  margin-left:72px;
+}
