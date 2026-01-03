@@ -37,7 +37,7 @@ a:hover{ text-decoration:underline; }
   color:#fff;
   font-weight:700;
 }
-.nav a.active{ background:#F2E6E6; }
+.nav a.active{ background:#CF9E9E; }
 .nav a:hover{ background:#1d1d1d; text-decoration:none; }
 
 .main{ flex:1; padding:28px 18px; box-sizing:border-box; }
