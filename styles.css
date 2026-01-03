@@ -36,9 +36,15 @@ a:hover{ text-decoration:underline; }
   border-radius:10px;
   color:#fff;
   font-weight:700;
+  
+.nav a:hover{
+  background:rgba(255,255,255,0.12);
 }
-.nav a.active{ background:#CF9E9E; }
-.nav a:hover{ background:#1d1d1d; text-decoration:none; }
+
+.nav a.active{
+  background:#a00800;
+  color:#fff;
+}
 
 .main{ flex:1; padding:28px 18px; box-sizing:border-box; }
 .container{ max-width:980px; margin:0 auto; }
