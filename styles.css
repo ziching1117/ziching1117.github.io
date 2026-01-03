@@ -13,7 +13,7 @@ a:hover{ text-decoration:underline; }
 /* Sidebar */
 .sidebar{
   width:260px;
-  background:#7131a;
+  background:#701318;
   color:#fff;
   padding:22px 16px;
   box-sizing:border-box;
@@ -229,5 +229,5 @@ a:hover{ text-decoration:underline; }
 
 /* === 強制覆蓋側欄顏色（最終生效） === */
 .sidebar{
-  background:#71313a !important;
+  background:#701318 !important;
 }
