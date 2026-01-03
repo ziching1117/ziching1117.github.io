@@ -226,3 +226,8 @@ a:hover{ text-decoration:underline; }
   background:#000;
   border-radius:12px;
 }
+
+/* === 強制覆蓋側欄顏色（最終生效） === */
+.sidebar{
+  background:#71313a !important;
+}
