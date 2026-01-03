@@ -1,21 +1,32 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh-Hant">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>幹部團隊｜第42屆系學會</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
   <div class="layout">
-    <aside class="sidebar">
-      <button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <button
+        class="sidebar-toggle"
+        type="button"
+        aria-label="切換側欄"
+        onclick="toggleSidebar()"
+      >
+        ☰
+      </button>
+
       <div class="brand">淡江大學大眾傳播學系<br>第42屆系學會</div>
-      <div class="subbrand">網站導覽</div>
+      <div class="subbrand">網站導覽（側欄式）</div>
+
       <nav class="nav">
         <a href="index.html">首頁</a>
         <a href="about.html">關於我們</a>
-        <a href="team.html">幹部團隊</a>
+        <a class="active" href="team.html">幹部團隊</a>
         <a href="organization.html">組織運作區</a>
         <a href="minutes.html">會議紀錄區</a>
         <a href="finance.html">財務管理區</a>
@@ -24,25 +35,44 @@
         <a href="photos.html">年度活動照片區</a>
         <a href="videos.html">年度活動影片區</a>
         <a href="contact.html">聯絡我們</a>
-    </nav>
+      </nav>
     </aside>
 
+    <!-- Main -->
     <main class="main">
       <div class="container">
         <div class="card">
           <h1 class="page-title">幹部團隊</h1>
+
           <ul>
             <li><strong>會長／公關組</strong>：鄭慈穎</li>
             <li><strong>副會長／行政組</strong>：莊子靚</li>
             <li><strong>活動組</strong>：吳左安、劉彥妤</li>
             <li><strong>財務組</strong>：陳沛伶</li>
             <li><strong>美宣組</strong>：林心宜</li>
-            <li><strong>機動組</strong>：周妙縈、陳昱臻</li>            
-            <li><strong>影音組</strong>：伍紘震、黃崇衡、李致丞、江宜恩</li>
+            <li><strong>機動組</strong>：周妙縈、陳昱臻</li>
           </ul>
         </div>
       </div>
     </main>
   </div>
+
+  <!-- Sidebar toggle script -->
+  <script>
+    function toggleSidebar() {
+      document.body.classList.toggle("sidebar-collapsed");
+      localStorage.setItem(
+        "sidebarCollapsed",
+        document.body.classList.contains("sidebar-collapsed") ? "1" : "0"
+      );
+    }
+
+    // Keep state after refresh
+    (function () {
+      if (localStorage.getItem("sidebarCollapsed") === "1") {
+        document.body.classList.add("sidebar-collapsed");
+      }
+    })();
+  </script>
 </body>
 </html>
