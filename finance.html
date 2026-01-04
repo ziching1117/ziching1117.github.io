@@ -1,35 +1,90 @@
-<!-- 財務管理區 -->
-<div class="card">
-  <h1 class="page-title">財務管理區</h1>
-  <p class="page-desc">
-    本區彙整系學會年度財務相關資料，包含活動預算、實際收支、系費繳交與器材清單，
-    以確保財務運作透明並利於後續查核。
-  </p>
-</div>
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>財務管理區｜第42屆系學會</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-<!-- 項目分類（卡片式四格） -->
-<div class="card">
-  <h2 class="section-title">項目分類</h2>
+<body>
+  <div class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <button class="sidebar-toggle" type="button" onclick="toggleSidebar()">≡</button>
 
-  <div class="quick-grid">
-    <a class="quick-item" href="pdf/finance-budget.pdf" target="_blank" rel="noopener">
-      <div class="quick-title">活動預算表</div>
-      <div class="quick-desc">各項活動經費預估</div>
-    </a>
+      <div class="brand">淡江大學大眾傳播學系<br>第42屆系學會</div>
+      <div class="subbrand">網站導覽（側欄式）</div>
 
-    <a class="quick-item" href="pdf/finance-cashflow.pdf" target="_blank" rel="noopener">
-      <div class="quick-title">財務細流綜整</div>
-      <div class="quick-desc">實際收支彙整</div>
-    </a>
+      <nav class="nav">
+        <a href="index.html">首頁</a>
+        <a href="about.html">關於我們</a>
+        <a href="team.html">幹部團隊</a>
+        <a href="organization.html">組織運作區</a>
+        <a href="minutes.html">會議記錄區</a>
+        <a class="active" href="finance.html">財務管理區</a>
+        <a href="plans.html">活動企劃書</a>
+        <a href="performance.html">活動績效區</a>
+        <a href="photos.html">年度活動照片區</a>
+        <a href="videos.html">年度活動影片區</a>
+        <a href="contact.html">聯絡我們</a>
+      </nav>
+    </aside>
 
-    <a class="quick-item" href="pdf/fee-list-43rd.pdf" target="_blank" rel="noopener">
-      <div class="quick-title">43屆新生繳交系費名單</div>
-      <div class="quick-desc">43屆系費收取之名冊</div>
-    </a>
+    <!-- Main -->
+    <main class="main">
+      <div class="container">
 
-    <a class="quick-item" href="pdf/equipment-list.pdf" target="_blank" rel="noopener">
-      <div class="quick-title">系學會器材清單</div>
-      <div class="quick-desc">器材資料庫>ㄑ>
-    </a>
+        <!-- Page Intro Card -->
+        <div class="card">
+          <h1 class="page-title">財務管理區</h1>
+          <p class="page-desc">
+            本區彙整系學會年度財務相關資料，包含活動預算、實際收支、系費繳交與器材清單，
+            以確保財務運作透明並利於後續查核。
+          </p>
+        </div>
+
+        <!-- Section Card -->
+        <div class="card">
+          <h2 class="section-title">項目分類</h2>
+
+          <!-- 跟首頁快速入口同款：四格卡片 -->
+          <div class="quick-grid">
+            <a class="quick-item" href="pdf/finance-budget.pdf" target="_blank" rel="noopener">
+              <div class="quick-title">活動預算表</div>
+              <div class="quick-desc">各項活動經費預估</div>
+              <div class="quick-cta">查看PDF</div>
+            </a>
+
+            <a class="quick-item" href="pdf/finance-cashflow.pdf" target="_blank" rel="noopener">
+              <div class="quick-title">財務細流總整</div>
+              <div class="quick-desc">實際收支彙整</div>
+              <div class="quick-cta">查看PDF</div>
+            </a>
+
+            <a class="quick-item" href="pdf/fee-list-43rd.pdf" target="_blank" rel="noopener">
+              <div class="quick-title">43屆新生繳交系費名冊</div>
+              <div class="quick-desc">系費收取之名單整理</div>
+              <div class="quick-cta">查看PDF</div>
+            </a>
+
+            <a class="quick-item" href="pdf/equipment-list.pdf" target="_blank" rel="noopener">
+              <div class="quick-title">系學會器材清單</div>
+              <div class="quick-desc">器材資料庫</div>
+              <div class="quick-cta">查看PDF</div>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer">© 淡江大學大眾傳播學系第42屆系學會</div>
+      </div>
+    </main>
   </div>
-</div>
+
+  <script>
+    function toggleSidebar() {
+      document.body.classList.toggle('sidebar-collapsed');
+    }
+  </script>
+</body>
+</html>
