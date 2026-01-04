@@ -360,3 +360,53 @@ body.sidebar-collapsed .sidebar .nav a{
 body.sidebar-collapsed .main{
   margin-left:72px;
 }
+
+/* === Quick Cards (首頁快速入口 / 財務項目分類共用) === */
+.quick-grid{
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap:16px;
+  margin-top:12px;
+}
+
+.quick-item{
+  display:block;
+  background:#fff;
+  border:1px solid rgba(0,0,0,0.08);
+  border-radius:14px;
+  padding:18px 18px;
+  text-decoration:none;
+  color:#111;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.quick-item:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+}
+
+.quick-title{
+  font-size:18px;
+  font-weight:800;
+  margin-bottom:6px;
+}
+
+.quick-desc{
+  font-size:13px;
+  color:#666;
+  line-height:1.6;
+  margin-bottom:10px;
+}
+
+.quick-cta{
+  font-size:13px;
+  font-weight:700;
+  color:#333;
+}
+
+/* 手機：改成一欄 */
+@media (max-width: 720px){
+  .quick-grid{
+    grid-template-columns: 1fr;
+  }
+}
